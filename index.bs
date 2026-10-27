@@ -6,6 +6,9 @@ Abstract:
   This document describes an API for providing access to devices that
   support the Human Interface Device (HID) protocol.
 Markup Shorthands: css no, markdown yes
+Translation: zh-Hans https://htmlspecs.com/hid/
+Translation: ja https://jp.htmlspecs.com/hid/
+Translation: ko https://ko.htmlspecs.com/hid/
 </pre>
 
 <pre class="biblio">
