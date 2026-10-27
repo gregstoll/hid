@@ -476,21 +476,25 @@ field=]. Each item also has a tag that identifies its type.
                 |globalStack|.
             1.  Let |value| be the [=item data field=]
                 interpreted as an `unsigned long`.
+            1.  Let |signedValue| be the [=item data field=]
+                interpreted as a signed two's complement integer
+                [=bSize field=] bytes wide, or 0 if the [=bSize field=]
+                is 0.
             1.  If |item| has the [=Usage Page tag=], then set
                 |globalState|["{{HIDCollectionInfo/usagePage}}"] to
                 |value|.
             1.  If |item| has the [=Logical Minimum tag=], then set
                 |globalState|["{{HIDReportItem/logicalMinimum}}"] to
-                |value|.
+                |signedValue|.
             1.  If |item| has the [=Logical Maximum tag=], then set
                 |globalState|["{{HIDReportItem/logicalMaximum}}"] to
-                |value|.
+                |signedValue|.
             1.  If |item| has the [=Physical Minimum tag=], then set
                 |globalState|["{{HIDReportItem/physicalMinimum}}"] to
-                |value|.
+                |signedValue|.
             1.  If |item| has the [=Physical Maximum tag=], then set
                 |globalState|["{{HIDReportItem/physicalMaximum}}"] to
-                |value|.
+                |signedValue|.
             1.  If |item| has the [=Report Size tag=], then set
                 |globalState|["{{HIDReportItem/reportSize}}"] to |value|.
             1.  If |item| has the [=Report ID tag=], then set
