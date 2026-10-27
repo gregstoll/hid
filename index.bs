@@ -1208,7 +1208,6 @@ The {{HIDDevice/open()}} method steps are:
         [=relevant global object=] of [=this=] using the [=HID device
         task source=] to [=reject=] |promise| with a "{{NetworkError}}"
         {{DOMException}} and abort these steps.
-    1.  Set [=this=].{{HIDDevice/[[state]]}} to `"opened"`.
     1.  [=Queue a global task=] on the [=relevant global object=] of
         [=this=] using the [=HID device task source=] to run the
         following steps:
