@@ -453,6 +453,7 @@ field=]. Each item also has a tag that identifies its type.
         1.  If |item| has the [=End Collection tag=], then
             [=list/remove=] the last [=list/item=] of |ancestors|.
         1.  Set |localState| to be an empty [=ordered map=].
+        1.  Set |stringIndices| to be an empty [=list=].
         1.  Set |usages| to be an empty [=sequence=] of `unsigned
             long`.
 
