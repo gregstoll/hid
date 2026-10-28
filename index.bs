@@ -391,7 +391,7 @@ field=]. Each item also has a tag that identifies its type.
                 |globalStack|.
             1.  Let |reportId| be
                 |globalState|["{{HIDReportInfo/reportId}}"].
-            1.  Let <var ignore>reportItem</var> be the result of
+            1.  Let |reportItem| be the result of
                 [=creating a HID report item=] with |item|, |localState|,
                 |globalState|, |usages|, and <var ignore>strings</var>.
             1.  [=list/For each=] |collection| of
@@ -415,7 +415,7 @@ field=]. Each item also has a tag that identifies its type.
                     1.  Set |report|["{{HIDReportInfo/items}}"] to an
                         empty [=sequence=] of {{HIDReportItem}}.
                     1.  [=list/Append=] |report| to |reports|.
-                1.  [=list/Append=] |item| to
+                1.  [=list/Append=] |reportItem| to
                     |report|["{{HIDReportInfo/items}}"].
         1.  If |item| has the [=Collection tag=]:
             1.  Let |collection| be a [=new=]
