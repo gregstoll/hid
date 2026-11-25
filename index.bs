@@ -1299,7 +1299,7 @@ The {{HIDDevice/sendReport()}} method steps are:
 1.  If |reportId| is 0 and the [=HID interface=] represented by
     [=this=] [=uses report IDs=], or if |reportId| is not 0 and the
     interface does not [=use report IDs=], then [=reject=] |promise| with
-    a "{{TypeError}}" {{DOMException}} and return |promise|.
+    a {{TypeError}} and return |promise|.
 1.  [=list/Append=] |promise| to
     [=this=].{{HIDDevice/[[pendingSendReportPromises]]}}.
 1.  Perform the following steps [=in parallel=]:
@@ -1342,7 +1342,7 @@ The {{HIDDevice/sendFeatureReport()}} method steps are:
 1.  If |reportId| is 0 and the [=HID interface=] represented by
     [=this=] [=uses report IDs=], or if |reportId| is not 0 and the
     interface does not [=use report IDs=], then [=reject=] |promise| with
-    a "{{TypeError}}" {{DOMException}} and return |promise|.
+    a {{TypeError}} and return |promise|.
 1.  [=list/Append=] |promise| to
     [=this=].{{HIDDevice/[[pendingSendFeatureReportPromises]]}}.
 1.  Perform the following steps [=in parallel=]:
@@ -1385,7 +1385,7 @@ The {{HIDDevice/receiveFeatureReport()}} method steps are:
 1.  If |reportId| is 0 and the [=HID interface=] represented by
     [=this=] [=uses report IDs=], or if |reportId| is not 0 and the
     interface does not [=use report IDs=], then [=reject=] |promise| with
-    a "{{TypeError}}" {{DOMException}} and return |promise|.
+    a {{TypeError}} and return |promise|.
 1.  [=list/Append=] |promise| to
     [=this=].{{HIDDevice/[[pendingReceiveFeatureReportPromises]]}}.
 1.  Perform the following steps [=in parallel=]:
